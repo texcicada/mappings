@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage[no-math]{fontspec}
+\setmainfont{Noto Serif}
+\usepackage[Georgian, Latin, Punctuation, Diacritics]{ucharclasses}
+%-------------------
+\pagecolor{purple!6}
+%===============
+\setmainfont{Noto Serif}
+\newfontfamily\geofontipa[Mapping=georgian-to-latinipa]{Noto Serif}[Colour=blue]
+\newfontfamily\geofontiso[Mapping=georgian-to-latiniso]{Noto Serif}[Colour=red]
+\newfontfamily\geofontpkb[Mapping=georgian-to-latinpkb]{Noto Serif}[Colour=brown]
+\newfontfamily\geofont{Noto Serif Georgian}
+\newfontfamily\geomfont[Mapping=latin-to-georgian]{Noto Serif Georgian}
+\newcommand\tgeoi[1]{{\geofontipa #1}}
+\newcommand\tgeoii[1]{{\geofontiso #1}}
+\newcommand\tgeoiii[1]{{\geofontpkb #1}}
+\newcommand\textgeo[1]{{\geofont #1}}
+\newcommand\textgeom[1]{{\geomfont #1}}
+%-------------------
+\setTransitionsFor{Georgian}{\geofont}{ }%space(=glue) for line-wrapping
+\setTransitionsForLatin{\normalfont}{}
+\setTransitionsForPunctuation{\geofontipa}{\normalfont\normalsize\normalcolor}
+\setTransitionsForDiacritics{\normalfont}{}
+
+
+%===============
+
+
+%-------------------
+\begin{document}
+\uccoff
+
+\begin{tabular}{rcccrl}
+ & Georgian & IPA & ISO & pkb & \\
+1 & \textgeo{ა}  & \tgeoi{ა} & \tgeoii{ა} & a $\to$ \textgeom{a} &  $\to$ \tgeoiii{ა} \\
+2 & \textgeo{ბ}  & \tgeoi{ბ} & \tgeoii{ბ} & b $\to$ \textgeom{b} &  $\to$ \tgeoiii{ბ} \\
+3 & \textgeo{გ}  & \tgeoi{გ} & \tgeoii{გ} & g $\to$ \textgeom{g} &  $\to$ \tgeoiii{გ} \\
+4 & \textgeo{დ}  & \tgeoi{დ} & \tgeoii{დ} & d $\to$ \textgeom{d} &  $\to$ \tgeoiii{დ} \\
+5 & \textgeo{ე}  & \tgeoi{ე} & \tgeoii{ე} & e $\to$ \textgeom{e} &  $\to$ \tgeoiii{ე} \\
+6 & \textgeo{ვ}  & \tgeoi{ვ} & \tgeoii{ვ} & v $\to$ \textgeom{v} &  $\to$ \tgeoiii{ვ} \\
+7 & \textgeo{ზ}  & \tgeoi{ზ} & \tgeoii{ზ} & z $\to$ \textgeom{z} &  $\to$ \tgeoiii{ზ} \\
+8 & \textgeo{ჱ}  & \tgeoi{ჱ} & \tgeoii{ჱ} & ee $\to$ \textgeom{ee} &  $\to$ \tgeoiii{ჱ} \\
+9 & \textgeo{თ}  & \tgeoi{თ} & \tgeoii{თ} & th $\to$ \textgeom{th} &  $\to$ \tgeoiii{თ} \\
+10 & \textgeo{ი}  & \tgeoi{ი} & \tgeoii{ი} & i $\to$ \textgeom{i} &  $\to$ \tgeoiii{ი} \\
+11 & \textgeo{კ}  & \tgeoi{კ} & \tgeoii{კ} & k $\to$ \textgeom{k} &  $\to$ \tgeoiii{კ} \\
+12 & \textgeo{ლ}  & \tgeoi{ლ} & \tgeoii{ლ} & l $\to$ \textgeom{l} &  $\to$ \tgeoiii{ლ} \\
+13 & \textgeo{მ}  & \tgeoi{მ} & \tgeoii{მ} & m $\to$ \textgeom{m} &  $\to$ \tgeoiii{მ} \\
+14 & \textgeo{ნ}  & \tgeoi{ნ} & \tgeoii{ნ} & n $\to$ \textgeom{n} &  $\to$ \tgeoiii{ნ} \\
+15 & \textgeo{ჲ}  & \tgeoi{ჲ} & \tgeoii{ჲ} & j $\to$ \textgeom{j} &  $\to$ \tgeoiii{ჲ} \\
+16 & \textgeo{ო}  & \tgeoi{ო} & \tgeoii{ო} & o $\to$ \textgeom{o} &  $\to$ \tgeoiii{ო} \\
+17 & \textgeo{პ}  & \tgeoi{პ} & \tgeoii{პ} & p $\to$ \textgeom{p} &  $\to$ \tgeoiii{პ} \\
+18 & \textgeo{ჟ}  & \tgeoi{ჟ} & \tgeoii{ჟ} & zh $\to$ \textgeom{zh} &  $\to$ \tgeoiii{ჟ} \\
+19 & \textgeo{რ}  & \tgeoi{რ} & \tgeoii{რ} & r $\to$ \textgeom{r} &  $\to$ \tgeoiii{რ} \\
+20 & \textgeo{ს}  & \tgeoi{ს} & \tgeoii{ს} & s $\to$ \textgeom{s} &  $\to$ \tgeoiii{ს} \\
+21 & \textgeo{ტ}  & \tgeoi{ტ} & \tgeoii{ტ} & t $\to$ \textgeom{t} &  $\to$ \tgeoiii{ტ} \\
+22 & \textgeo{ჳ}  & \tgeoi{ჳ} & \tgeoii{ჳ} & w $\to$ \textgeom{w} &  $\to$ \tgeoiii{ჳ} \\
+23 & \textgeo{უ}  & \tgeoi{უ} & \tgeoii{უ} & u $\to$ \textgeom{u} &  $\to$ \tgeoiii{უ} \\
+24 & \textgeo{ფ}  & \tgeoi{ფ} & \tgeoii{ფ} & ph $\to$ \textgeom{ph} &  $\to$ \tgeoiii{ფ} \\
+25 & \textgeo{ქ}  & \tgeoi{ქ} & \tgeoii{ქ} & kh $\to$ \textgeom{kh} &  $\to$ \tgeoiii{ქ} \\
+26 & \textgeo{ღ}  & \tgeoi{ღ} & \tgeoii{ღ} & gh $\to$ \textgeom{gh} &  $\to$ \tgeoiii{ღ} \\
+27 & \textgeo{ყ}  & \tgeoi{ყ} & \tgeoii{ყ} & q $\to$ \textgeom{q} &  $\to$ \tgeoiii{ყ} \\
+28 & \textgeo{შ}  & \tgeoi{შ} & \tgeoii{შ} & sh $\to$ \textgeom{sh} &  $\to$ \tgeoiii{შ} \\
+29 & \textgeo{ჩ}  & \tgeoi{ჩ} & \tgeoii{ჩ} & tsh $\to$ \textgeom{tsh} &  $\to$ \tgeoiii{ჩ} \\
+30 & \textgeo{ც}  & \tgeoi{ც} & \tgeoii{ც} & ts $\to$ \textgeom{ts} &  $\to$ \tgeoiii{ც} \\
+31 & \textgeo{ძ}  & \tgeoi{ძ} & \tgeoii{ძ} & j $\to$ \textgeom{j} &  $\to$ \tgeoiii{ძ} \\
+32 & \textgeo{წ}  & \tgeoi{წ} & \tgeoii{წ} & c $\to$ \textgeom{c} &  $\to$ \tgeoiii{წ} \\
+33 & \textgeo{ჭ}  & \tgeoi{ჭ} & \tgeoii{ჭ} & ch $\to$ \textgeom{ch} &  $\to$ \tgeoiii{ჭ} \\
+34 & \textgeo{ხ}  & \tgeoi{ხ} & \tgeoii{ხ} & x $\to$ \textgeom{x} &  $\to$ \tgeoiii{ხ} \\
+35 & \textgeo{ჴ}  & \tgeoi{ჴ} & \tgeoii{ჴ} & qh $\to$ \textgeom{qh} &  $\to$ \tgeoiii{ჴ} \\
+36 & \textgeo{ჯ}  & \tgeoi{ჯ} & \tgeoii{ჯ} & j $\to$ \textgeom{j} &  $\to$ \tgeoiii{ჯ} \\
+37 & \textgeo{ჰ}  & \tgeoi{ჰ} & \tgeoii{ჰ} & h $\to$ \textgeom{h} &  $\to$ \tgeoiii{ჰ} \\
+38 & \textgeo{ჵ}  & \tgeoi{ჵ} & \tgeoii{ჵ} & oo $\to$ \textgeom{oo} &  $\to$ \tgeoiii{ჵ} \\
+\end{tabular}
+
+\newpage
+\uccon
+%\geofont 
+მზის სისტემა - ვიკიპედია
+\uccoff
+
+\geofontipa მზის სისტემა - ვიკიპედია
+
+\geofontiso მზის სისტემა - ვიკიპედია
+
+\geofontpkb მზის სისტემა - ვიკიპედია
+
+
+%ბჟაშ პლანეტარული სისტემა. ბჟაშ სისტემაშა მიშმურც არძო, მუში მუკი-მუკი მართაფუ რსხული: პლანეტეფი, თინეფიშ ალმაშარეეფი, ასტეროიდეფი დო კომეტეფი. 
+%
+%    ბჟა
+%    პლანეტეფი დო მუში ალმაშარეეფი
+%        მერკური
+%        მორღა
+%        დიხაუჩა
+%            თუთა
+%        მოროხი
+%            ფობოსი დო დეიმოსი
+%        დია
+%            დიაშ ალმაშარეეფი
+%        მარსქული
+%            მარსქულიშ ალმაშარეეფი
+%            მარსქულიშ რულეეფი
+%        ურანი
+%            ურანიშ ალმაშარეეფი
+%        ნეპტუნი
+%            ნეპტუნიშ ალმაშარეეფი
+%            
+%            
+%            
+%მზის სისტემა შედგება მზისა და მის გარშემო მოძრავი გრავიტაციულად ჩაჭერილი ასტრონომიული ობიექტებისაგან. მზის სისტემის ფორმირება 4,6 მილიარდი წლის წინ, მოლეკულური ღრუბლის კოლაფსის შედეგად მოხდა. სისტემის მასის უმეტესობას (99,86\%) მზე შეიცავს. ოთხი შედარებით პატარა შიდა პლანეტა — მერკური, ვენერა, დედამიწა და მარსი (მათ ასევე მოიხსენიებენ, როგორც კლდოვანი პლანეტები), ძირითადად, ქვისა და მეტალისგან შედგება, ხოლო ორი უდიდესი პლანეტა — იუპიტერი და სატურნი, ძირითადად, წყალბადითა და ჰელიუმითაა გაჯერებული. ორ უშორეს პლანეტაზე — ურანსა და ნეპტუნზე მეთანის, წყალბადისა და ამიაკის ყინულების დიდი მარაგია, რის გამოც მათ ზოგჯერ „ყინულის გიგანტებად“ მოიხსენიებენ. 
+%
+%
+%%ཉི་མའི་ཁྱིམ་རྒྱུད།
+%
+%\geofontiso
+%ბჟაშ პლანეტარული სისტემა. ბჟაშ სისტემაშა მიშმურც არძო, მუში მუკი-მუკი მართაფუ რსხული: პლანეტეფი, თინეფიშ ალმაშარეეფი, ასტეროიდეფი დო კომეტეფი. 
+%
+%    ბჟა
+%    პლანეტეფი დო მუში ალმაშარეეფი
+%        მერკური
+%        მორღა
+%        დიხაუჩა
+%            თუთა
+%        მოროხი
+%            ფობოსი დო დეიმოსი
+%        დია
+%            დიაშ ალმაშარეეფი
+%        მარსქული
+%            მარსქულიშ ალმაშარეეფი
+%            მარსქულიშ რულეეფი
+%        ურანი
+%            ურანიშ ალმაშარეეფი
+%        ნეპტუნი
+%            ნეპტუნიშ ალმაშარეეფი
+%            
+%            
+%            
+%მზის სისტემა შედგება მზისა და მის გარშემო მოძრავი გრავიტაციულად ჩაჭერილი ასტრონომიული ობიექტებისაგან. მზის სისტემის ფორმირება 4,6 მილიარდი წლის წინ, მოლეკულური ღრუბლის კოლაფსის შედეგად მოხდა. სისტემის მასის უმეტესობას (99,86\%) მზე შეიცავს. ოთხი შედარებით პატარა შიდა პლანეტა — მერკური, ვენერა, დედამიწა და მარსი (მათ ასევე მოიხსენიებენ, როგორც კლდოვანი პლანეტები), ძირითადად, ქვისა და მეტალისგან შედგება, ხოლო ორი უდიდესი პლანეტა — იუპიტერი და სატურნი, ძირითადად, წყალბადითა და ჰელიუმითაა გაჯერებული. ორ უშორეს პლანეტაზე — ურანსა და ნეპტუნზე მეთანის, წყალბადისა და ამიაკის ყინულების დიდი მარაგია, რის გამოც მათ ზოგჯერ „ყინულის გიგანტებად“ მოიხსენიებენ. 
+
+
+
+\end{document}

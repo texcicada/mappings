@@ -1,0 +1,66 @@
+; TECkit mapping for TeX input conventions <-> Unicode characters
+
+LHSName "Georrgian-to-LatinIPA"
+RHSName "UNICODE"
+
+pass(Unicode)
+
+; ligatures from Knuth's original CMR fonts
+U+002D U+002D           <>  U+2013  ; -- -> en dash
+U+002D U+002D U+002D    <>  U+2014  ; --- -> em dash
+
+U+0027          <>  U+2019  ; ' -> right single quote
+U+0027 U+0027   <>  U+201D  ; '' -> right double quote
+U+0022           >  U+201D  ; " -> right double quote
+
+U+0060          <>  U+2018  ; ` -> left single quote
+U+0060 U+0060   <>  U+201C  ; `` -> left double quote
+
+U+0021 U+0060   <>  U+00A1  ; !` -> inverted exclam
+U+003F U+0060   <>  U+00BF  ; ?` -> inverted question
+
+; additions supported in T1 encoding
+U+002C U+002C   <>  U+201E  ; ,, -> DOUBLE LOW-9 QUOTATION MARK
+U+003C U+003C   <>  U+00AB  ; << -> LEFT POINTING GUILLEMET
+U+003E U+003E   <>  U+00BB  ; >> -> RIGHT POINTING GUILLEMET
+
+
+;==========================
+ U+10D0 <>  U+0251; ა ɑ
+ U+10D1 <>  U+0062; ბ b
+ U+10D2 <>  U+0261; გ ɡ
+ U+10D3 <>  U+0064; დ d
+ U+10D4 <>  U+025B; ე ɛ
+ U+10D5 <>  U+0076; ვ v
+ U+10D6 <>  U+007A; ზ z
+ U+10F1 <>  U+0065 U+026A; ჱ eɪ
+ U+10D7 <>  U+0074 U+02B0; თ tʰ
+ U+10D8 <>  U+0069; ი i
+ U+10D9 <>  U+006B U+02BC; კ kʼ
+ U+10DA <>  U+006C; ლ l
+ U+10DB <>  U+006D; მ m
+ U+10DC <>  U+006E; ნ n
+ U+10F2 <>  U+006A; ჲ j
+ U+10DD <>  U+0254; ო ɔ
+ U+10DE <>  U+0070 U+02BC; პ pʼ
+ U+10DF <>  U+0292; ჟ ʒ
+ U+10E0 <>  U+0072; რ r
+ U+10E1 <>  U+0073; ს s
+ U+10E2 <>  U+0074 U+02BC; ტ tʼ
+ U+10F3 <>  U+0077; ჳ w
+ U+10E3 <>  U+0075; უ u
+ U+10E4 <>  U+0070 U+02B0; ფ pʰ
+ U+10E5 <>  U+006B U+02B0; ქ kʰ
+ U+10E6 <>  U+0281; ღ ʁ
+ U+10E7 <>  U+0071 U+02BC; ყ qʼ
+ U+10E8 <>  U+0283; შ ʃ
+ U+10E9 <>  U+0074 U+0361 U+0283 U+0028 U+02B0 U+0029; ჩ t͡ʃ(ʰ)
+ U+10EA <>  U+0074 U+0361 U+0073 U+0028 U+02B0 U+0029; ც t͡s(ʰ)
+ U+10EB <>  U+0064 U+0361 U+007A; ძ d͡z
+ U+10EC <>  U+0074 U+0361 U+0073 U+02BC; წ t͡sʼ
+ U+10ED <>  U+0074 U+0361 U+0283 U+02BC; ჭ t͡ʃʼ
+ U+10EE <>  U+03C7; ხ χ
+ U+10F4 <>  U+0071; ჴ q
+ U+10EF <>  U+0064 U+0361 U+0292; ჯ d͡ʒ
+ U+10F0 <>  U+0068; ჰ h
+ U+10F5 <>  U+006F U+02D0; ჵ oː

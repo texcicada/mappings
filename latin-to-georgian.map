@@ -1,0 +1,66 @@
+; TECkit mapping for TeX input conventions <-> Unicode characters
+
+LHSName "Latin-to-Georgian" ; plain keyboard
+RHSName "UNICODE"
+
+pass(Unicode)
+
+; ligatures from Knuth's original CMR fonts
+U+002D U+002D           <>  U+2013  ; -- -> en dash
+U+002D U+002D U+002D    <>  U+2014  ; --- -> em dash
+
+U+0027          <>  U+2019  ; ' -> right single quote
+U+0027 U+0027   <>  U+201D  ; '' -> right double quote
+U+0022           >  U+201D  ; " -> right double quote
+
+U+0060          <>  U+2018  ; ` -> left single quote
+U+0060 U+0060   <>  U+201C  ; `` -> left double quote
+
+U+0021 U+0060   <>  U+00A1  ; !` -> inverted exclam
+U+003F U+0060   <>  U+00BF  ; ?` -> inverted question
+
+; additions supported in T1 encoding
+U+002C U+002C   <>  U+201E  ; ,, -> DOUBLE LOW-9 QUOTATION MARK
+U+003C U+003C   <>  U+00AB  ; << -> LEFT POINTING GUILLEMET
+U+003E U+003E   <>  U+00BB  ; >> -> RIGHT POINTING GUILLEMET
+
+
+;==========================
+ U+0061 <>  U+10D0; ა a
+ U+0062 <>  U+10D1; ბ b
+ U+0067 <>  U+10D2; გ g
+ U+0064 <>  U+10D3; დ d
+ U+0065 <>  U+10D4; ე e
+ U+0076 <>  U+10D5; ვ v
+ U+007A <>  U+10D6; ზ z
+ U+0065 U+0065 <>  U+10F1; ჱ ee
+ U+0074 U+0068 <>  U+10D7; თ th
+ U+0069 <>  U+10D8; ი i
+ U+006B <>  U+10D9; კ k
+ U+006C <>  U+10DA; ლ l
+ U+006D <>  U+10DB; მ m
+ U+006E <>  U+10DC; ნ n
+ U+006A <>  U+10F2; ჲ j
+ U+006F <>  U+10DD; ო o
+ U+0070 <>  U+10DE; პ p
+ U+007A U+0068 <>  U+10DF; ჟ zh
+ U+0072 <>  U+10E0; რ r
+ U+0073 <>  U+10E1; ს s
+ U+0074 <>  U+10E2; ტ t
+ U+0077 <>  U+10F3; ჳ w
+ U+0075 <>  U+10E3; უ u
+ U+0070 U+0068 <>  U+10E4; ფ ph
+ U+006B U+0068 <>  U+10E5; ქ kh
+ U+0067 U+0068 <>  U+10E6; ღ gh
+ U+0071 <>  U+10E7; ყ q
+ U+0073 U+0068 <>  U+10E8; შ sh
+ U+0074 U+0073 U+0068 <>  U+10E9; ჩ tsh
+ U+0074 U+0073 <>  U+10EA; ც ts
+ U+006A <>  U+10EB; ძ j
+ U+0063 <>  U+10EC; წ c
+ U+0063 U+0068 <>  U+10ED; ჭ ch
+ U+0078 <>  U+10EE; ხ x
+ U+0071 U+0068 <>  U+10F4; ჴ qh
+ U+006A <>  U+10EF; ჯ j
+ U+0068 <>  U+10F0; ჰ h
+ U+006F U+006F <>  U+10F5; ჵ oo
